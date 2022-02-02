@@ -27,12 +27,17 @@ let date = new Date('Feb 3 2022 15:00:00');
 function timer() {
   let now = new Date();
   gap = date - now;
-  console.log(gap);
 
   let hours = Math.floor(gap / 1000 / 60 / 60) % 24;
   let minutes = Math.floor(gap / 1000 / 60) % 60;
   let seconds = Math.floor(gap / 1000) % 60;
-  console.log(hours);
+    
+      if (gap < 0) {
+    hours = hours + 24;
+    minutes = minutes + 60;
+    seconds = seconds + 60;
+  }
+
 
   document.querySelector('.hours').textContent = hours + 'H';
   document.querySelector('.minutes').textContent = minutes + 'M';
