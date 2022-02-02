@@ -22,7 +22,7 @@ $(document).ready(function() {
   });
 
 
-let date = new Date('Feb 3 2022 15:00:00');
+let date = new Date('Feb 3 2022 16:11:00');
 
 function timer() {
   let now = new Date();
@@ -31,13 +31,12 @@ function timer() {
   let hours = Math.floor(gap / 1000 / 60 / 60) % 24;
   let minutes = Math.floor(gap / 1000 / 60) % 60;
   let seconds = Math.floor(gap / 1000) % 60;
-    
-      if (gap < 0) {
+
+  if (gap < 0) {
     hours = hours + 24;
     minutes = minutes + 60;
     seconds = seconds + 60;
   }
-
 
   document.querySelector('.hours').textContent = hours + 'H';
   document.querySelector('.minutes').textContent = minutes + 'M';
