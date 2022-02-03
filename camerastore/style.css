@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #231F1F;
+}
+
+.navbar {
+    background: transparent !important;
+    margin-top: 45px;
+}
+
+.search-btn,
+.cart-btn {
+    border: none;
+    background: transparent;
+}
+
+.nav-link {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #FEFEFE !important;
+    transition-duration: 0.25s;
+}
+
+.nav-link:hover {
+    transition-duration: 0.25s;
+    color: rgb(151, 151, 151) !important;
+}
+
+.nav-item {
+    padding-left: 44px;
+}
+
+.about {
+    padding-left: 0;
+}
+
+.search-btn {
+    padding-right: 22px;
+}
+
+.cart-btn {
+    margin-right: 58px;
+}
+
+.navbar-brand {
+    margin-left: 45px;
+}
+
+@media (max-width: 992px) {
+    .cart-btn {
+        margin-right: 0;
+    }
+}
+
+
+.main-ps-text {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.375em;
+    color: #FEFEFE;
+    margin-left: 200px;
+    margin-top: 90px;
+}
+
+.main-text {
+    font-family: 'Rowdies';
+    font-weight: 400;
+    font-size: 95px;
+    line-height: 118px;
+    color: #FEFEFE;
+    margin-left: 200px;
+}
+
+.main-text span {
+    color: #F2AE00;
+}
+
+.main-info-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: #E5E5E5;
+    margin-left: 200px;
+}
+
+.camera-one {
+    width: 700px;
+    height: 639px;
+    background: url(img/camera-one.png);
+    float: right;
+    margin-top: -550px;
+    margin-right: 100px;
+}
+
+.camera-two {
+    width: 700px;
+    height: 600px;
+    background: url(img/camera-two.png);
+    float: right;
+    margin-top: -500px;
+    margin-right: 100px;
+}
+
+.camera-three {
+    width: 700px;
+    height: 600px;
+    background: url(img/camera-three.png);
+    float: right;
+    margin-top: -500px;
+    margin-right: 100px;
+}
+
+.buy-btn {
+    width: 199px;
+    height: 45px;
+    background-color: #F3BC2B;
+    border: none;
+    transform: skew(140deg);
+    margin-left: 195px;
+    margin-top: 85px;
+    transition-duration: 0.4s;
+}
+
+.buy-btn span {
+    display: block;
+    transform: skew(-140deg);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    transition-duration: 0.4s;
+}
+
+.buy-btn:hover {
+    transition-duration: 0.4s;
+    background-color: #FB9E02;
+}
+
+.arrow-btn {
+    width: 76px;
+    height: 44px;
+    background-color: #FB9E02;
+    border: none;
+    transform: skew(140deg);
+    margin-left: 6px;
+    transition-duration: 0.4s;
+}
+
+.arrow-btn span {
+    display: block;
+    transform: skew(-140deg);
+}
+
+.arrow-btn:hover {
+    transition-duration: 0.4s;
+    background-color: #F3BC2B;
+}
+
+.camera-view-block {
+    width: 331px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    margin-right: 50px;
+}
+
+.view-style {
+    width: 101px;
+    height: 92px;
+    background: #5D5C5C;
+    border-radius: 5px;
+    border: none;
+}
+
+.selected {
+    border: 2px solid #F1AF00;
+}
+
+
+.bg-light-1 {
+    position: absolute;
+    width: 848px;
+    height: 847px;
+    left: -479px;
+    top: -579px;
+    background: #FEFEFE;
+    filter: blur(1000px);
+    z-index: -998;
+}
+
+.bg-light-2 {
+    position: absolute;
+    width: 848px;
+    height: 200px;
+    background: #FEFEFE;
+    right: 0;
+    bottom: 0;
+    border-radius: 250px;
+    filter: blur(1000px);
+    z-index: -999;
+}
+
+
+.bg-text {
+    font-family: 'Rowdies';
+    font-weight: 400;
+    font-size: 257px;
+    line-height: 319px;
+    color: #353333;
+    position: absolute;
+    z-index: -1000;
+    top: 200px;
+    right: 0;
+    letter-spacing: 50px;
+    opacity: 0.5;
+}
+
+@media (max-width: 1320px) {
+    .main-text-block p {
+        margin-left: 55px;
+    }
+
+    .camera-body {
+        margin-right: 0;
+    }
+
+    .buy-btn {
+        margin-left: 55px;
+    }
+
+    .arrow-btn {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 1049px) {
+    .arrow-btn {
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1045px) {
+    .camera-body {
+        margin-right: -50px;
+    }
+}
+
+@media (max-width: 993px) {
+    .camera-body {
+        margin-right: 0;
+        float: none;
+        margin-top: 0;
+    }
+
+    .camera-view-block {
+        float: none;
+        margin: 0 auto;
+        margin-top: -200px;
+    }
+
+    .buy-btn {
+        margin-top: 250px;
+        margin-left: 0;
+    }
+
+    .arrow-btn {
+        display: none;
+    }
+
+    .main-text-block p {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .camera-one {
+        background: url(img/camera-one-adapt.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: initial;
+    }
+
+    .camera-two {
+        background: url(img/camera-two-adapt.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: initial;
+    }
+
+    .camera-three {
+        background: url(img/camera-three-adapt.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: initial;
+    }
+
+    .camera-view-block {
+        margin-top: -400px;
+    }
+
+    .buy-btn {
+        margin-top: 200px;
+    }
+
+    .bg-text {
+        transform: rotate(90deg);
+        font-size: 70px;
+        margin-left: 150px;
+    }
+}
+
+
+@media (max-width:448px) {
+    .main-text {
+        font-size: 85px;
+    }
+
+    .navbar-brand {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 414px) {
+    .main-text {
+        font-size: 65px;
+    }
+
+    .bg-text {
+        left: -150px;
+    }
+}
