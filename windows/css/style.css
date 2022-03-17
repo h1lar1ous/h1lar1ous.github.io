@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 .nav-item {
     margin-left: 50px !important;
 }
