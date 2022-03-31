@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0,28,47);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    width: 350px;
+    height: 720px;
+    background-color: rgb(8, 71, 105);
+    border-top: 10px solid rgb(0,158,227);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.info-main-text {
+    margin-top: -15px;
+    line-height: 15px;
+    margin-left: 1.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 12px;
+}
+
+header {
+    margin-left: 15px;
+}
+
+.header-text {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(13, 182, 255);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.field input {
+    width: 285px;
+    background: transparent;
+    border: 1.5px solid rgb(0,158,227);
+    margin-top: 3px;
+    padding-left: 15px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    height: 35px;
+}
+
+.field label {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.field input[type="submit"] {
+    width: 160px;
+    height: 40px;
+    background-color: rgb(0,158,227);
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    padding-left: -5px;
+}
+
+.error-txt {
+    background-color: rgb(230, 115, 115);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    width: 250px;
+}
+
+.back {
+    color: rgba(255, 255, 255, 0.521) !important;
+    text-align: center;
+    margin-left: 25px;
+    opacity: 0.5;
+}
+
+.back:hover {
+    opacity: 0.7;
+}
+
+.image-input input {
+    border: none !important;
+}
+
+.input__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+  }
+   
+  .input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    cursor: pointer;
+  }
+
+.input__file-icon {
+    cursor: pointer;
+}
+
+#result {
+    border-radius: 50%;
+}
+
+.user-choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.choice-text {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.choice-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-choice-wrapper {
+    width: 300px;
+    background-color: #083750;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.student-btn {
+    margin-right: 50px;
+    width: 100px;
+    height: 35px;
+    background-color: #219de0;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    transition-duration: 0.45s;
+    padding-top: 5px;
+    padding-left: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.student-btn:hover {
+    transition-duration: 0.45s;
+    color: #219de0;
+    background-color: #fff;
+}
+
+.teacher-btn {
+    width: 100px;
+    height: 35px;
+    background-color: #219de0;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    transition-duration: 0.45s;
+    padding-top: 5px;
+    padding-left: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.teacher-btn:hover {
+    transition-duration: 0.45s;
+    color: #219de0;
+    background-color: #fff;
+}
+
+
+@media (max-height: 750px) {
+    section {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    section {
+        height: 500px;
+    }
+}
+
+.choice-text {
+    text-align: center;
+}
+
+@media (max-width: 370px) {
+    section {
+        width: 320px;
+    }
+}
+
+@media (max-width: 330px) {
+    section {
+        width: 290px;
+    }
+
+    section input {
+        width: 260px !important;  
+    }
+}
+
+.back {
+    text-align: center;
+}
